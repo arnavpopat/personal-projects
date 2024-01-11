@@ -1,2 +1,2 @@
 # personal-projects
-drag index.html to view NFL visualization
+drag index.html into web browswer to view NFL visualization
