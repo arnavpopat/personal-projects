@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Visualizing NFL's concussion problem</title>
+        <meta charset="UTF-8" />
+        <script src="https://vega.github.io/vega/vega.min.js"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+   
+    <body style="background-color: #f9f4eb;";>
+        <h1>Visualizing the NFL's concussion problem</h1>
+        <h5><mark class="name" style="background-color:#ccff66;">By Arnav Popat</mark></h3>
+        <p>
+            It is no secret that American football is a collision sport with a long history. However, despite the league’s success, athletes in the NFL spend hours practicing and experience countless injuries throughout their careers. The league has been unable to keep player safety at a high standard while maintaining the excitement of the sport and this has had an extremely harmful effect on some players. The emergence of Chronic traumatic encephalopathy (CTE) which significantly reduces one’s life expectancy. Various solutions have been brought forward but none seem to be able to point to any specific reasons for these injuries. This is why I decided to visualize the data for concussions in the National Football League and interactively find patterns to come up with a solution.
+
+        </p>
+        <p>
+            
+            In order to do this, I use a 
+            <a href="https://raw.githubusercontent.com/arnavpopat/csc-444-data/main/Concussion_Injuries.csv" target="_blank" ;>data set</a>
+             which includes every concussion injury in the NFL for 3 seasons (2012, 2013, 2014). The data shows details of every injury such as the position they play and how severe the injury was as well as any pre existing injuries which could have played a role in the concussion. 
+
+            This data has potential to show a relationship between the position the player plays and the severity of the injury. This data set is also helpful because it allows us to see how the team a player plays for or against can affect his likelihood of a concussion.
+
+
+
+        </p>
+        <p>
+            While the visualizations most likely do not point to a direct solution, it allows us to find patterns in the data. These conclusions will allow us to have a more specific idea of how to improve player safety and who to hold responsible. 
+
+        </p>
+        <h3>The Big Idea</h3>
+
+        <p style=" font-size: 22px; font-style: italic; opacity: 1;">
+            Visualizing NFL concussion data will allow us to interact categorically and allow us to draw conclusions to improve player safety and make recommendations on how to prevent further injuries.
+        </p>
+
+        <img src="divider.png" alt="divider" width="800" height="60">
+
+        <p class = "scatter_explain">
+            In order to get a <mark>big picture</mark> of the data, we can look at the injuries based on severity and try to understand how this progesses throughout the season. The scatterplot below does this while differentiating between the type of injury. We can also identify a certain data point by hovering over it. 
+
+        </p>
+
+        <div class="scatter" id="scatter" ;></div>
+
+        <p class = "exp">
+            From this visual it is clear that concussions are the most common injury. 
+
+            We can also see that there is a trend of severity. More severe injuries happen towards the beginning of the season and gradually decrease towards the end. An explanation for this trend could be that there are players who haven't undergone the same amount or level of conditioning before the season starts.
+
+        </p>
+
+        <p style="padding-top: 15px;">
+            In order to get a different perspective, we can take a more <mark>specified approach</mark> to looking at the data. To do this, I aggregated the data to see which particular positions are being injured the most. I also added a feature to filter the data to only include severe injuries (more than 2 games missed). We can also see the exact number of injuries by hovering over the bars.
+
+        </p>
+
+        
+        <div class="bar" id="bar"></div>
+        
+
+        <p style="padding-bottom: 25px;">
+            From this visual, we can see that positions which primarly play away from the line of scrimmage seems to be more likely to be injured. This could be because the tackles are made in open field when players are already moving at high speeds. Regardless of severity, players who play closer to the line of scrimmage such as offensive and defensive linemen, are less likely to get injured.
+        </p>
+
+        <p class="conclusion" >
+            After visualizing the data, we were able to conclude concussions are more likely to happen towards the beginning of the season likely due to the imbalance of conditioning amongst players. We were also able to see that players who play skill positions tend to have the most severe injuries. In order to combat the concussion problem in the league, the could focus more on standardizing preseason conditioning especially for players in skill positions.
+        </p>
+
+        <p style="padding-top: 30px;">
+        </p>
+
+    </body>
+
+    <script src="source/bar.js"></script>
+    <script src="source/scatter.js"></script>
+
+
+</html>
+
+
+
+

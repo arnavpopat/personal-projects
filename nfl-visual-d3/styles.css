@@ -1,0 +1,40 @@
+.name {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color:#ccff66;
+    border-radius: 10px;
+}
+
+
+body {
+    text-align: center;
+    font-family: Verdana, sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+}
+       
+p {
+    text-align: center;
+    margin-right: 300px;
+    margin-left: 300px;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+
+mark {
+    background-color: #ccff66;
+}
+.conclusion{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #ccff66;
+    border-radius: 8px;
+    font-style: italic;
+}
